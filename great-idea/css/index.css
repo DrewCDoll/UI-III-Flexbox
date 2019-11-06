@@ -1,21 +1,89 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+   /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+    
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -24,43 +92,243 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
 	display: block;
 }
+
 body {
 	line-height: 1;
 }
-ol, ul {
+
+ol,
+ul {
 	list-style: none;
 }
-blockquote, q {
+
+blockquote,
+q {
 	quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
 	content: '';
 	content: none;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
 /* Set every element's box-sizing to border-box */
+
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
-    font-family: 'Titillium Web', sans-serif;
+html,
+body {
+	height: 100%;
+	/* font-family: 'Titillium Web', sans-serif; */
+	font-family: 'Oswald', sans-serif; /* Add a new font family from Google*/
 }
 
-h1, h2, h3, h4, h5 {
-    font-family: 'Bangers', cursive;
-    letter-spacing: 1px;
-    margin-bottom: 15px;
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-family: 'Bangers', cursive;
+	letter-spacing: 1px;
+	margin-bottom: 10px;
 }
 
-/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+body {
+width: 90%;
+margin: 1% 5% 3% 5%
+}
+
+/* .logo {
+vertical-align: middle;
+margin-left: 2%;
+} */
+
+.logo-bck {
+background-image: url(../img/logo.png);
+/* border: groove 2px darkblue; */
+background-repeat: no-repeat;
+background-size: auto;
+width: 200px;
+height: 41px;
+min-width: 25px;
+min-height: 25px;
+display: inline-block;
+/* margin-top: 2%; */
+margin-left: 6%;
+padding-top: 2%;
+vertical-align: middle;
+}
+
+
+.snippets-2x1 {
+display: inline-block;
+width: 47%;
+margin: 0 2% 0 0;
+}
+
+.snippets-2x1-header {
+display: inline-block;
+width: 47%;
+margin: 0 2% 0 0;
+padding-left: 15%;
+padding-top: 2%;
+}
+
+
+/* 
+.snippets-2x1-img {
+display: inline-block; 
+margin: 0 0 0 10%;
+width: 25%;
+min-width: 100px;
+vertical-align: top;
+text-align: center;
+} */
+
+.snippets-2x1-img-bkg {
+background-image: url("https://i.imgur.com/CrNNjLA.png");
+/*border: groove 2px darkblue; */
+background-repeat: no-repeat;  
+background-size: contain;
+width: 450px;
+height: 450px;
+min-width: 25px;
+min-height: 25px;
+display: inline-block;
+margin: 0 0 0 15%;
+vertical-align: top;
+text-align: center;
+}
+
+
+
+#intro .snippets-2x1 h2 {
+text-align: center;
+vertical-align: middle;
+margin: auto;
+font-size: 450%;
+}
+
+#intro .snippets-2x1 button {
+display: block;
+margin: auto;
+background-color: white;
+border: solid 1px black;
+color: black;
+padding: 15px 25px;
+text-align: center;
+font-size: 24px;
+cursor: pointer;
+}
+
+.snippets-3x1 {
+display: inline-block;
+margin: 0 2% 0 0;
+width: 31%;
+}
+
+.snippets-3x1-contacts {
+display: inline-block;
+text-align: right;
+margin: 0 2% 0 5%;
+width: 25%;
+}
+
+.line {
+height: 2px;
+background: black;
+margin: 20px 0px 20px 0px;
+}
+
+#top-nav{
+margin: 0 0 0 5%;
+padding: 1%;
+width: 90%;
+border: groove 2px darkblue;
+background-color: cadetblue; /*Add a background color to the top navigation -Stretch Goal*/
+background-image: radial-gradient(lightblue, blue);
+position: fixed; /*Set the nav bar to be fixed at the top of the page, and allow other elements to scroll under the nav bar. Stretch Goal*/
+top: 0;
+left: 0;
+z-index: 9999;
+}
+
+#top-nav a {
+display: inline-block;
+text-decoration: none;
+color: black;
+margin: 2%;
+width: 10%;
+vertical-align: middle;
+
+}
+
+#top-nav a:hover { /*add some automation when hovering over a navigation selection Stretch Goal*/
+cursor: pointer;
+text-decoration-line: overline;    
+}
+
+#intro {
+width: 100%;
+margin: 10% 0% 3% 0%;
+}
+
+#double-snippets {
+margin: 0% 0% 1% 0%;
+}
+
+
+/* .middle-img {
+width: 100%;
+border: groove 2px darkblue;
+} */
+
+.middle-img-as-background {
+background-image: url('https://i.imgur.com/WpQtqnR.jpg');
+border: groove 2px darkblue;
+background-repeat: no-repeat;  
+background-size: 100% 100%;
+height: 20%;
+}
+
+
+#triple-snippets {
+margin: 1% 0% 2% 0%;
+}
+
+#triple-snippets-contacts {
+margin-top: 1%;
+margin-bottom: 3%;
+}
+
+
+#cr {
+margin: 2% 0% 0% 0%;
+text-align: center;
+font-size: 75%;
+}
+
+
